@@ -19,18 +19,19 @@ LR - that seems to be the biggest factor combined with optimiser
 Optimizer I’ve trained following the same training regime with RMSProp but never got as good results as with Adam
 Epochs - if you don’t get great results by 1,000-1500 episode training much further does little to improve and usually introduces just noise to the weights. I went as far as 5,000 and never got any higher score than at 1,000. If you have a better luck do let me know.
 
-#Model 
+##Model 
 
 Model consists of 4 layers, I've found that using 64 nodes per layer works best, details of the model are in the table below. 
 
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Linear-1               [-1, 64, 64]           2,432
-            Linear-2               [-1, 64, 64]           4,160
-            Linear-3                [-1, 64, 4]             260
-            Linear-4                [-1, 64, 4]             260
-================================================================
+
+|        Layer (type)   |           Output Shape   |      Param #|
+| --- | --- | --- | 
+|            Linear-1         |      [-1, 64, 64]    |       2,432|
+|            Linear-2         |      [-1, 64, 64]    |       4,160|
+|            Linear-3         |       [-1, 64, 4]    |         260|
+|            Linear-4         |       [-1, 64, 4]    |         260|
+
+
 Total params: 7,112
 Trainable params: 7,112
 Non-trainable params: 0
@@ -42,7 +43,7 @@ Estimated Total Size (MB): 0.10
 ----------------------------------------------------------------
 
 #Training chart: 
-[!(https://github.com/jsztompka/training_chart.jpg)]
+!(https://github.com/jsztompka/training.jpg)
 
 ## Video of the trained agent:
 [![Click to watch on youtube](https://img.youtube.com/vi/SRBDl_yjLBM/0.jpg)](https://youtu.be/SRBDl_yjLBM)
