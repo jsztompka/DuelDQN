@@ -9,12 +9,16 @@ You don’t have to build the environment yourself the prebuilt one included in 
 ## Environment details:
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.
 
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction. Given this information, the agent has to learn how to best select actions. Four discrete actions are available, corresponding to:
+The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction. Given this information, the agent has to learn how to best select actions.   
 
-0 - move forward.
-1 - move backward.
-2 - turn left.
-3 - turn right.
+Four discrete actions are available, corresponding to:  
+
+* 0 - move forward.  
+* 1 - move backward.  
+* 2 - turn left.  
+* 3 - turn right.  
+
+The problem is considered solved when the agent achieves average score of at least 13 over 100 episodes. 
 
 ## Video of the trained agent:
 [![Click to watch on youtube](https://img.youtube.com/vi/SRBDl_yjLBM/0.jpg)](https://youtu.be/SRBDl_yjLBM)
