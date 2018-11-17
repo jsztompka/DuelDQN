@@ -20,8 +20,8 @@ config.py
 
 It includes PLAY_ONLY argument which decides whether to start Agent with pre-trained weights or spend a few hours and train it from scratch :) 
 
-More details on the project can be found in:
-!(/Report.md)
+More details on the project can be found in:  
+[Report](/Report.md)
 
 
 
