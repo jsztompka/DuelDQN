@@ -6,19 +6,13 @@ This algorithm has a unique model implementation where the final output consists
 First (output) layer calculates a normal value function , the second (output) layer calculates the Advantage function and the model returns:
 Q = V + A - mean(A) 
 
-The implemenation in this repo follows architecture from the paper and it uses weighted Huber-Loss loss function to adjust model I’ve found it adds a little bit of stability to it
+The implemenation in this repo follows architecture from the paper but it uses weighted Huber-Loss loss function to calculate the cost(loss). In my experiments Huber-Loss had better performance over standard loss functions (this might be due to using PER), it appears to make the training a little more stable as well. 
 
 On average my best score was between 17-18 points
 
 Config also includes all parameters I found to work best.
 
-If you decide to run training and change parameters here is a list of things which did not work for me:
 
-Bigger networks (128/256/512/1024 - no added value to training)
-Bigger UPDATE_STEP - didn’t observe any improvement in training by reducing or increasing
-LR - that seems to be the biggest factor combined with optimiser
-Optimizer I’ve trained following the same training regime with RMSProp but never got as good results as with Adam
-Epochs - if you don’t get great results by 1,000-1500 episode training much further does little to improve and usually introduces just noise to the weights. I went as far as 5,000 and never got any higher score than at 1,000. If you have a better luck do let me know.
 
 ## Model 
 
