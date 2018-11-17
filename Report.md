@@ -60,3 +60,9 @@ PER_alpha = 0.6  - [0~1] convert the importance of TD error to priority
 PER_beta = 0.4   - importance-sampling, from initial value increasing to 1  
 PER_beta_increment_per_sampling = 0.001  - the rate of importance sampling increase  
 PER_abs_err_upper = 1.  - clipped abs error  
+
+## Future improvements: 
+The main problem with RL in general seems to be always the noise. If you find a way to reduce it you will get a better results. 
+
+Noisy Nets - introducing this special layer into the network might help reducing the noise 
+Rainbow - at the time of writing this state of art algorithm promising much better results 
