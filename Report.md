@@ -1,5 +1,6 @@
-## Agent:
-Agent is using Duel DQN Algorithm. 
+## Report
+
+## Agent is using Duel DQN Algorithm. 
 
 This algorithm has a unique model implementation where the final output consists of 2 separate layers calculating different functions. 
 First (output) layer calculates a normal value function , the second (output) layer calculates the Advantage function and the model returns:
@@ -42,7 +43,7 @@ Params size (MB): 0.03
 Estimated Total Size (MB): 0.10
 
 ## Training chart: 
-!(https://github.com/jsztompka/training.jpg)
+!(https://github.com/jsztompka/DuelDQN/master/training.jpg)
 
 ## Video of the trained agent:
 [![Click to watch on youtube](https://img.youtube.com/vi/SRBDl_yjLBM/0.jpg)](https://youtu.be/SRBDl_yjLBM)
