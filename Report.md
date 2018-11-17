@@ -52,19 +52,15 @@ Estimated Total Size (MB): 0.10
 ### Agent / network specific
 
 BUFFER_SIZE = int(5e4)  - replay buffer size
-
 BATCH_SIZE = 64         - minibatch size
-
 GAMMA = 0.98            - discount factor
-
 TAU = 1e-2              - for soft update of target parameters
-
 LR = 1e-3               - learning rate
 UPDATE_EVERY = 4        - how often to update the network
 
 ### Prioritised Experience Replay params
 
-kept epsilon / alpha same as per paper , decreased beta and beta_increment slightly
+Epsilon / alpha - kept the values from the paper , decreased beta and beta_increment slightly
 PER_epsilon = 0.001  - small amount to avoid zero priority
 PER_alpha = 0.6  - [0~1] convert the importance of TD error to priority
 PER_beta = 0.4   - importance-sampling, from initial value increasing to 1
