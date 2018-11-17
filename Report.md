@@ -43,19 +43,20 @@ Params size (MB): 0.03
 Estimated Total Size (MB): 0.10
 
 ## Training chart: 
-!(https://github.com/jsztompka/DuelDQN/master/training.jpg)
+!(https://github.com/jsztompka/DuelDQN/master/training.png)(https://github.com/jsztompka/DuelDQN/master/training.png)
 
 ## Video of the trained agent:
 [![Click to watch on youtube](https://img.youtube.com/vi/SRBDl_yjLBM/0.jpg)](https://youtu.be/SRBDl_yjLBM)
 
 ## Parameters used (please see config.py): 
 ### Agent / network specific
-BUFFER_SIZE = int(5e4)  # replay buffer size
-BATCH_SIZE = 64         # minibatch size
-GAMMA = 0.98             # discount factor
-TAU = 1e-2              # for soft update of target parameters
-LR = 1e-3               # learning rate
-UPDATE_EVERY = 4        # how often to update the network
+
+BUFFER_SIZE = int(5e4)  - replay buffer size
+BATCH_SIZE = 64         - minibatch size
+GAMMA = 0.98            - discount factor
+TAU = 1e-2              - for soft update of target parameters
+LR = 1e-3               - learning rate
+UPDATE_EVERY = 4        - how often to update the network
 
 ### Prioritised Experience Replay params
 
